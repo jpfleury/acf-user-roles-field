@@ -74,11 +74,11 @@ class acf_user_roles_field extends \acf_field {
 		acf_render_field_setting(
 			$field,
 			[
-				'name'         => 'multiple',
-				'label'        => __('Multiple user roles', 'acf-user-roles-field'),
-				'type'         => 'true_false',
+				'name' => 'multiple',
+				'label' => __('Multiple user roles', 'acf-user-roles-field'),
+				'type' => 'true_false',
 				'default_value' => true,
-				'hint'         => __('Allow to select multiple user roles.', 'acf-user-roles-field'),
+				'hint' => __('Allow to select multiple user roles.', 'acf-user-roles-field'),
 			],
 		);
 	}
@@ -95,7 +95,7 @@ class acf_user_roles_field extends \acf_field {
 			array_unshift($user_roles, '');
 			$multiple_attr = $field['multiple'] ? ' multiple' : '';
 			$value = is_array($field['value']) ? $field['value'] : [];
-			
+
 			echo '<select class="acf-user-roles-field-select" name="' . esc_attr($field['name']) . '[]"' . $multiple_attr . '>';
 
 			foreach ($user_roles as $user_role) {
