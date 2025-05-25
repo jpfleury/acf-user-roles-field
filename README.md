@@ -1,3 +1,5 @@
+[![release.yml](https://github.com/jpfleury/acf-user-roles-field/actions/workflows/release.yml/badge.svg)](https://github.com/jpfleury/acf-user-roles-field/releases)
+
 # ACF User Roles Field
 
 ACF User Roles Field is a Wordpress plugin that adds a new ACF field allowing to select user roles.
